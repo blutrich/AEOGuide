@@ -252,6 +252,20 @@ This repository contains comprehensive materials for a C-level executive lecture
 
 ---
 
+## 📖 Getting Started
+
+### First Time Here?
+
+1. **Read:** [USAGE_GUIDE.md](USAGE_GUIDE.md) - Complete guide on how to use this repository
+2. **Choose your path** based on your role (executive, developer, marketer, etc.)
+3. **Start implementing** with quick wins (robots.txt + schema markup)
+
+### Want to Contribute?
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing improvements, corrections, and new content.
+
+---
+
 ## 🎯 How to Use These Materials
 
 ### For a C-Level Presentation:
