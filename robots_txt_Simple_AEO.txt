@@ -1,0 +1,61 @@
+# robots.txt - Simple AEO-Optimized Configuration
+# Copy this file to your website root directory
+
+# ============================================
+# AI CRAWLERS - CRITICAL FOR AEO
+# ============================================
+
+# ChatGPT-User: Real-time search (MUST ALLOW)
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# GPTBot: Training data (ALLOW for future model training)
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# OAI-SearchBot: OpenAI search (ALLOW)
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# PerplexityBot: Perplexity search (ALLOW)
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ============================================
+# SEARCH ENGINES
+# ============================================
+
+# Googlebot: Google search + AI Overviews (MUST ALLOW)
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Bingbot: Used by ChatGPT (MUST ALLOW)
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ============================================
+# SITEMAP
+# ============================================
+
+Sitemap: https://yoursite.com/sitemap.xml
+
+# ============================================
+# INSTRUCTIONS:
+# ============================================
+# 1. Replace "yoursite.com" with your domain
+# 2. Add your specific admin/private directories
+# 3. Save as "robots.txt" in root directory
+# 4. Test: https://www.google.com/webmasters/tools/robots-testing-tool
+

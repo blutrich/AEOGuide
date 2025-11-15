@@ -1,0 +1,207 @@
+# robots.txt - Optimal Configuration for AEO (AI Engine Optimization)
+# Last Updated: January 2025
+# 
+# This configuration allows AI crawlers while protecting sensitive areas
+# CRITICAL: Replace [YOUR_SITE] with your actual site structure
+
+# ============================================
+# AI CRAWLERS - MUST ALLOW FOR AEO VISIBILITY
+# ============================================
+
+# ChatGPT-User: Real-time web search for ChatGPT responses
+# BLOCKING THIS = INVISIBLE IN CHATGPT
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# GPTBot: Training data collection for OpenAI models
+# Blocking this prevents training data access (real-time search still works)
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# OAI-SearchBot: OpenAI's search functionality
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# PerplexityBot: Content indexing for Perplexity search
+# Note: May use stealth crawlers, but should still allow official bot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# ============================================
+# TRADITIONAL SEARCH ENGINES
+# ============================================
+
+# Googlebot: Traditional Google search + Google AI Overviews
+# BLOCKING THIS = INVISIBLE IN GOOGLE (TRADITIONAL + AI)
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# Bingbot: Used by ChatGPT for search index
+# CRITICAL: ChatGPT uses Bing's index, not Google's
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /search/
+Disallow: /feed/
+Disallow: /trackback/
+
+# Other major search engines
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+
+# ============================================
+# BLOCK BAD BOTS AND SCRAPERS
+# ============================================
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Block aggressive scrapers
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot-Image
+Disallow: /
+
+# ============================================
+# SITEMAP LOCATION
+# ============================================
+
+# IMPORTANT: Update this with your actual sitemap URL
+Sitemap: https://yoursite.com/sitemap.xml
+Sitemap: https://yoursite.com/sitemap_index.xml
+
+# ============================================
+# CRAWL DELAY (OPTIONAL)
+# ============================================
+
+# Optional: Add crawl delay if server is slow
+# Uncomment if needed:
+# User-agent: *
+# Crawl-delay: 1
+
+# ============================================
+# NOTES FOR CUSTOMIZATION
+# ============================================
+#
+# 1. REPLACE "yoursite.com" with your actual domain
+# 2. If NOT using WordPress, remove /wp-admin/, /wp-includes/ lines
+# 3. Add your specific admin/private directories
+# 4. Update sitemap URLs to match your site
+# 5. Test with: https://www.google.com/webmasters/tools/robots-testing-tool
+# 6. Validate with Google Search Console
+#
+# ============================================
+# WHAT THIS CONFIGURATION DOES:
+# ============================================
+#
+# ✅ ALLOWS AI crawlers (ChatGPT, Perplexity, Google AI)
+# ✅ ALLOWS traditional search engines (Google, Bing)
+# ✅ BLOCKS sensitive areas (admin, private, wp-admin)
+# ✅ BLOCKS bad bots and scrapers
+# ✅ PROTECTS server resources
+# ✅ OPTIMIZES FOR AEO VISIBILITY
+#
+# ============================================
+# CRITICAL FOR AEO:
+# ============================================
+#
+# - ChatGPT-User MUST be allowed (ChatGPT visibility)
+# - Googlebot MUST be allowed (Google AI Overviews)
+# - Bingbot MUST be allowed (ChatGPT uses Bing index)
+# - PerplexityBot SHOULD be allowed (Perplexity visibility)
+#
+# Blocking any of these = INVISIBLE in that AI platform
+#
+# ============================================
+
