@@ -1,7 +1,9 @@
 # AI Engine Optimization (AEO) vs SEO: Complete guide
 
-
 This repository contains comprehensive materials for a C-level executive lecture on AI Engine Optimization (AEO) versus traditional SEO, including how AI search engines work and how to optimize content for ChatGPT, Google AI Overviews, and Perplexity.
+
+**📖 New to this repository?** Start with [USAGE_GUIDE.md](USAGE_GUIDE.md)  
+**🤝 Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
